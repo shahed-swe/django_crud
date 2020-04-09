@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <style>
+        .container{
+            margin-top: 70px;
+        }
+        .web{
+            margin-bottom:20px !important; 
+        }
+    </style>
+        <!-- checking the information -->
+    <section class="container">
+        <div class="col-12 col-lg-12 m-auto">
+            <div class="card container-body">
+                <div class="card-body col-10 col-lg-10 m-auto">
+                    <h3 class="card-title">{{objects.first_name}} {{objects.last_name}}</h3>
+                </div>
+                <div class="card-body col-10 col-lg-10 m-auto">
+                    <p class="card-title float-right">
+                        <label for="">Father Name:</label> {{objects.father_name}}
+                    </p>
+                    <p class="card-title">
+                        <label for="">Mother Name:</label> {{objects.mother_name}}
+                    </p>
+                    <p class="card-title float-right">
+                        <label for="">Age:</label> {{objects.age}}
+                    </p>
+                    
+                    <p class="card-title">
+                    {% if objects.gender == 'ml'%}
+                        <label for="">Gender:</label> Male
+                    {% else %}
+                        <label for="">Gender:</label> Female
+                    {% endif %}
+                    </p>
+                    
+
+                    <p class="card-title">
+                        <label for="">Email</label> {{objects.email}}
+                    </p>
+                </div>
+                <div class="col-8 col-lg-10 m-auto web">
+                    <a class="btn btn-success shadow-none" href="/home">BACK</a>
+                    <a class="btn btn-primary shadow-none" href="{{objects.get_edit_url}}">EDIT</a>
+                    <a class="btn btn-danger shadow-none" href="{{objects.get_delete_url}}"><span class="fa fa-eraser new"> Delete</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock%}

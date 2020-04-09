@@ -1,0 +1,84 @@
+.body {
+    background-image: linear-gradient(90deg, white, gray);
+}
+
+.login-section {
+    /* box-shadow: 10px 10px 5px gray; */
+    /* margin: 10px; */
+    margin-top: 300px;
+    margin-left: 10%;
+    overflow: hidden;
+}
+
+.fa-key {
+    font-size: 12px;
+}
+
+.position {
+    /* margin-left: px; */
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+}
+
+.h1-position {
+    font-family: "Baloo Thambi 2", Arial, Helvetica, sans-serif;
+    width: 120px;
+    margin-left: 34%;
+}
+
+.nav-link:hover {
+    border-bottom: 1px solid;
+    border-bottom-color: blueviolet !important;
+}
+
+.nav-section {
+    margin: 0px;
+}
+
+.lead {
+    font-size: 29px;
+}
+
+.btn-extra {
+    border-color: black;
+    color: black;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 40%;
+    transform: translate(-5%);
+}
+
+.carousel-caption h3 {
+    font-size: 170%;
+    color: #3fa5d4;
+    text-shadow: 5px 3px 17px #2ca7ee;
+}
+
+.carousel-caption .head-h2 {
+    font-size: 32px bold;
+    color: #0a71b6;
+}
+
+.display-2 {
+    text-shadow: 10px 10px 5px gray;
+}
+
+@media only screen and (max-width: 1366px) {
+    .login-section {
+        margin-top: 210px;
+    }
+    .take {
+        margin-left: 40%
+    }
+    .carousel-caption {
+        position: absolute;
+        top: 25%;
+        transform: translate(-5%);
+    }
+    .section-two img {
+        height: 635px;
+        width: 1366px;
+    }
+}

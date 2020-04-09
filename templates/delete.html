@@ -1,0 +1,12 @@
+{%extends 'base.html'%} {% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-lg-8 m-auto" style="margin:200px !important">
+            <h3>Are you sure, You want to Delete that information?</h3>
+            <form action="" method="POST">{%csrf_token%}
+                <button class="btn btn-danger">Yes, Delete</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock%}

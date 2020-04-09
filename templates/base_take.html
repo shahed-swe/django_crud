@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <title>{{title}}</title>
+</head>
+
+<body>
+    <!-- navbar section -->
+    {%include 'navbar.html' %}
+    <!-- first block content -->
+    <section class="main_section"></section>
+    {% block content %} {% endblock %}
+    <!-- scripts -->
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+</body>
+
+</html>
